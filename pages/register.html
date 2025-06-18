@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - CAteriNgz</title>
+    <link rel="stylesheet" href="../style/styleRegister.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../pages/home.html">
+                <img src="../Assets/cateringz logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="../pages/product.html">Product</a></li>
+                <li><a href="../pages/testimonial.html">Testimonial</a></li>
+                <li><a href="../pages/aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="register-btn">
+            <a href="../pages/register.html"><button>Register</button></a>
+        </div>
+        <div class="hamburger-menu">
+            <img src="../Assets/hamburgerbar.png" alt="Hamburger Menu" class="hamburger-bar" id="hamburger-bar">
+            <nav class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="../pages/home.html">Home</a></li>
+                <li><a href="../pages/product.html">Product</a></li>
+                <li><a href="../pages/testimonial.html">Testimonial</a></li>
+                <li><a href="../pages/aboutUs.html">About Us</a></li>
+                <li><a href="../pages/register.html">Register</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="main-container">
+        <div id="form-container">
+            <div id="title">Register Form</div>
+            <form action="#" id="register-form" onsubmit="validation(event)">
+                <div id="error-line"></div>
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" class="inputted" placeholder="Enter full name">
+                    <div class="error-message" id="error-name"></div>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="inputted" placeholder="Enter email address">
+                    <div class="error-message" id="error-email"></div>
+                </div>
+                <div class="input-box">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address" class="inputted" placeholder="Enter Address">
+                    <div class="error-message" id="error-address"></div>
+                </div>
+                <div class="gender-box">
+                    <label for="gender">Gender</label>
+                    <div id="gender-container">
+                        <div class="radio-container">
+                            <input type="radio" name="gender" id="male" value="male">
+                            <span id="desc">Male</span>
+                        </div>
+                        <div class="radio-container">
+                            <input type="radio" name="gender" id="female" value="female">
+                            <span id="desc">Female</span>
+                        </div>
+                    </div>
+                    <div class="error-message" id="error-gender"></div>
+                </div>
+                <div class="input-box">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" class="inputted">
+                    <div class="error-message" id="error-dob"></div>
+                    <input type="checkbox" id="terms" name="terms" required> Agree for Terms & Condition
+                </div>
+                <button type="submit" id="bttn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h4>CAteriNgz</h4>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Jl. Lorem Ipsum no. 2 Kebon Jeruk<br>
+                    Jakarta Barat 11530, Indonesia
+                </p>
+                <p><i class="fas fa-envelope"></i> cateringz@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +62 81234567890</p>
+            </div>
+            <div class="footer-center">
+                <h4>Follow Us:</h4>
+                <div class="social-icons">
+                <a href="www.instagram.com"><img src="../Assets/instagram.png" alt="Instagram" class="social-icon"></a>
+                <a href="x.com"><img src="../Assets/twitter.png" alt="Twitter" class="social-icon"></a>
+                <a href="www.tiktok.com"><img src="../Assets/tiktok.png" alt="TikTok" class="social-icon"></a>
+                <a href="www.youtube.com"><img src="../Assets/youtube.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2024, CAteriNgz. All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="../script/scriptRegister.js"></script>
+</body>
+</html>
